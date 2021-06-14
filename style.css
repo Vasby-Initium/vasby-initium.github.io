@@ -1,3 +1,20 @@
+@font-face {
+    font-family: 'Ramaraja';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ramaraja/v7/SlGTmQearpYAYG1CACIjoHE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+@font-face {
+    font-family: 'Reem Kufi';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/reemkufi/v10/2sDcZGJLip7W2J7v7wQzaGW5.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
 * {
     box-sizing: border-box;
 }
@@ -5,25 +22,28 @@
 body {
     background-color: black;
     font-size: 14px;
+    scroll-behavior: smooth;
 }
 
 #sec1 {
-    height:1100px;
+    margin-top: -30px;
+    height:1300px;
+    position: relative;
 }
 
 #sec2 {
     background-color: white;
-    height: 100px;
+    height: 150px;
 }
 
 #sec3 {
     background-color:#C4C4C4;
-    height: 400px;
+    height: 450px;
 }
 
 #sec4 {   
     background-color: white; 
-    height: 100px;
+    height: 200px;
 }
 
 #sec5 {
@@ -33,7 +53,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 55% 45%;
 }
 
 #des1 {
@@ -48,12 +68,12 @@ body {
 
 #des3 {
     background-color:#364E51;
-    height: 650px;
+    height: 700px;
 }
 
 #des4 {
     background-color: white;
-    height: 100px;
+    height: 150px;
 }
 
 #des5 {
@@ -63,29 +83,175 @@ body {
 
 #des6 {
     background-color:#C4C4C4;
-    height: 400px;
+    height: 500px;
 }
 
 .row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
 
 [class*="col-"] {
     float:left;
     padding: 1px;
-  }
+}
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
+
+.col-2 {width: 14.42%;}
+.col-8 {
+    width: 100%;
+    margin: 0 0%;
+    overflow: hidden;
+}
+
+
+
+#navbar {
+    overflow: hidden;
+    background-color: #1B1919;
+  }
+  
+#navbar a {
+    height: 70px;
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    font-family: Reem Kufi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    display:flex;
+    align-items: center;
+    letter-spacing: 0.12em;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 16px 24px;
+    text-decoration: none;
+}
+
+.cta {
+    z-index: 99;
+    margin-top: 85vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.753);
+    color: white;
+    padding: 25px;
+}
+
+.cta a {
+    color: white;
+    font-family: reem kufi;
+    letter-spacing: 0.2em;
+}
+
+img {
+    float: right;
+    padding-right: 10%;
+}
+
+#des3 img {
+    margin-top: 50px;
+    margin-right: 40px;
+}
+
+#slogan {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11em;
+    letter-spacing: 0.10em;
+    color: #000000;
+}
+
+#mission {
+    position: absolute;
+    margin-top: 325px;
+    margin-left: 9%;
+    font-family: reem kufi;
+    font-size: 2em;
+    letter-spacing: 0.20em;
+}
+
+#aboutus {
+    margin-left: 16%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
+}
+
+#about1 {
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 9%;
+    height: 400px;
+    width: 30%;
+    background-color:#364E51;
+    font-family: reem kufi;
+    font-size: 1.8em;
+    padding: .4em .4em;
+    color: white;
+}
+
+#about2 {
+    position: absolute;
+    margin-top: 220px;
+    margin-left: 44%;
+    height: 200px;
+    width: 50%;
+    background-color:#364E51;
+    font-family: reem kufi;
+    font-size: 1.8em;
+    padding: .4em .4em;
+    color: white;
+}
+
+#whatwedo {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
+}
+
+#ourteam {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
+}
+
+#projects {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: #000000;
+}
+
+#contact {
+    margin-left: 8%;
+    font-family: Ramaraja;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 5em;
+    letter-spacing: 0.28em;
+    color: white;
+}
+
+#projectslider {
+    height: 250px;
+}
